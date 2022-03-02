@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url(./loginbackground.jpg) no-repeat;
+  background-size: cover;
+}
+
+input {
+  padding: 5px 12px;
+  font-size: 14px;
+  outline: none;
+  border-radius: 32px;
+  border: none;
+  border: 0.2px solid #575757;
+  width: 100%;
+  margin-bottom: 12px;
+  background-color: #96bfdd9d;
+}
+input:focus {
+  border: 0.2px solid rgb(3, 5, 139);
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 3px;
+  margin-left: 6px;
+  color: rgb(77, 77, 77);
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.box {
+  margin: 32px;
+  background-color: rgba(42, 71, 92, 0.753);
+  background-color: white;
+  padding: 22px 42px 32px;
+  border-radius: 32px;
+  min-width: 252px;
+  border: 4px solid rgba(0, 15, 82, 0.829);
+}
+
+.wrapper {
+  display: flex;
+  gap: 12px;
+}
+.col {
+  padding: 0 12px;
+}
+
+.col_2 {
+  border-left: 4px solid rgba(0, 15, 82, 0.829);
+}
+.link {
+  background: rgba(9, 44, 199, 0.829);
+  padding: 5px 0;
+  text-decoration: none;
+  color: white;
+  border-radius: 12px;
+  display: block;
+  width: 50%;
+  font-size: 16px;
+  text-align: center;
+  margin: 22px auto 0;
+}
+
+.link:hover {
+  background: rgba(1, 25, 131, 0.829);
+  transition: all 1s ease;
+}
+.text {
+  margin-bottom: 32px;
+  font-size: 32px;
+  text-align: center;
+  color: white;
+  color: black;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+@media only screen and (max-width: 1102px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+  .col_2 {
+    border-left: none;
+  }
+}
+@media only screen and (max-width: 762px) {
+  .container {
+    flex-direction: column;
+  }
+}
